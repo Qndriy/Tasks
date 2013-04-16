@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title> Guess the word 2 </title>
+		<link href="Style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div id="center"> <input type="button" value="Start the game" id="button" onclick="Introduction()"> </div>
+		<script>
+			function Introduction() {
+				var myArray = ['javascript', 'програмування', 'Лисиничі', 'Lviv', 'Ukraine'];
+				var answer = prompt('Enter the word');
+				if (answer == myArray[0] || answer == myArray[1] || answer == myArray[2] || answer == myArray[3] || answer == myArray[4] ) {
+					alert("Congratulation!!!!!");
+				}
+				else {
+					if (confirm('You not guessed.' + ' ' + 'Continue game?') ) {
+					Introduction();
+					}
+					else {
+					//nothing
+					}
+				
+				}
+			}
+		</script>
+	</body>
+</html>
